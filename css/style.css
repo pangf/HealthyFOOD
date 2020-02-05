@@ -1,6 +1,8 @@
+/* global -----------------------------------------------------*/
+
 a:visited {
   text-decoration: none;
-  color: #000000;
+  color:#3a8d00;
 }
 
 a:hover {
@@ -25,6 +27,17 @@ a,
 a:focus,
 a:active {
   color: #1e3706;
+}
+h3+h6 {
+  margin-top: 16px;
+}
+h6, .heading-6 {
+  letter-spacing: .075em;
+  text-transform: none;
+}
+
+ul li, ol li {
+  display: block;
 }
 
 h1,
@@ -61,6 +74,27 @@ h6,
   vertical-align: middle;
   user-select: none;
   transition: all 250ms ease-in-out;
+}
+
+/*padding on summer sale in sm screen*/
+.section-md, .section-lg, .section-xl, .section-xxl, .section-inset-2 {
+  padding: 50px 0;
+}
+
+@media (min-width: 1200px){
+  .section-xl {
+    padding: 100px 0;
+}
+}
+@media (min-width: 992px){
+  .section-xl {
+    padding: 90px 0;
+}
+}
+@media (min-width: 768px){
+  .section-xl {
+    padding: 80px 0;
+}
 }
 
 @media (min-width: 768px) {
@@ -143,6 +177,9 @@ h6,
   overflow: hidden;
 }
 
+.banner-title {
+  z-index: 1;
+}
 .banner-ad {
   visibility: visible;
   animation-delay: 0.1s;
@@ -393,18 +430,7 @@ img {
   line-height: 1;
 }
 
-/* .cach-corporate .cach-arrow .icon::before {
-    content: '\f238';
-    font-family: material design icons;
-}
-.icon::before {
-    position: relative;
-    display: inline-block;
-    font-weight: 400;
-    font-style: normal;
-    speak: none;
-    text-transform: none;
-} */
+
 
 .cach-corporate .collapse {
   position: relative;
@@ -529,24 +555,6 @@ img {
   z-index: 1;
 }
 
-/* @media (min-width: 768px) {
-  .product-button-wrap :hover{
-    align-items: center;
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 20px 20px 40px;
-    background: rgba(255, 255, 255, 0.94);
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    z-index: 1;
-    opacity: 0;
-  }
-} */
-
 .product-button-wrap:hover {
   align-items: center;
   position: absolute;
@@ -656,50 +664,244 @@ img {
 }
 
 /*testimonial----------------------------------------------------*/
-/* .carousel-indicators .active {
-  background: #31708f;
+/*summer sale----------------------------------------------------*/
+.call_section_1 {
+  background-image: url(../images/sale.jpg);
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-.content {
-  margin-top: 20px;
+.bg-brown-1 {
+  background-color: #555552;
 }
-
-.adjust1 {
-  float: left;
+.call_section_1:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 0px;
   width: 100%;
-  margin-bottom: 0;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.60);
 }
 
-.adjust2 {
-  margin: 0;
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  
 }
 
-.carousel-indicators li {
-  border: 1px solid #ccc;
+.call_section_1 h3 {
+  color: #fff;
 }
 
-.carousel-control {
-  color: #31708f;
-  width: 5%;
+.text-spacing-100 {
+  letter-spacing: .1em;
 }
 
-.carousel-control:hover,
-.carousel-control:focus {
-  color: #31708f;
+.btn-shop-now {
+  color:grey;
+  border: 1px solid #555552;
 }
 
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
+/* footer------------------------------------------- */
+
+.footer-modern-2 {
+  overflow: hidden;
+  background: #fdeeee;
+  /* background-size: cover;
+  background-position: center;
+  position: relative; */
 }
 
-.media-object {
-  margin: auto;
-  margin-top: 15%;
+@media (min-width: 768px) {
+  .row-md-50 {
+    margin-bottom: -50px;
+}
+}
+.row-40 {
+  margin-bottom: -40px;
 }
 
-@media screen and (max-width: 768px) {
-  .media-object {
-    margin-top: 0;
-  }
-} */
+.row-40>* {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 575.98px){
+  .block-1 {
+    max-width: 270px;
+}
+}
+
+@media (max-width: 575.98px){
+  .block-1, .block-2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media (min-width: 768px){
+  .footer-logo+* {
+    margin-top: 10px;
+}
+
+}
+
+.footer-classic-text {
+  letter-spacing: .025em;
+  color:#1d2124;
+}
+
+@media (min-width: 1200px){
+  .footer-modern-list {
+    max-width: 94%;
+}
+}
+
+@media (min-width: 992px){
+  .footer-modern-list {
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+}
+
+}
+
+.footer-modern-title+* {
+  margin-top: 25px;
+}
+
+.footer-modern-list {
+  text-align: left;
+  columns: 2;
+  break-inside: avoid;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  margin-bottom: -7px;
+  color: #777;
+}
+
+@media (min-width: 1200px){
+  .footer-modern-list>li {
+    padding-right: 17px;
+}
+}
+
+@media (min-width: 768px){
+  .footer-modern-list>li {
+    text-indent: -34px;
+    padding-left: 34px;
+}
+}
+
+.footer-modern-list>li {
+  margin-bottom: 7px;
+}
+
+.footer-modern-list>li {
+  text-indent: -20px;
+  padding-left: 20px;
+  transition: all .25s ease;
+}
+
+@media (min-width: 768px){
+  .footer-modern-list>li::before {
+    width: 17px;
+    margin-right: 17px;
+}
+}
+
+.footer-modern-list>li::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  height: 2px;
+  width: 10px;
+  margin-right: 10px;
+  background: #d7d7d7;
+  transition: inherit;
+}
+
+.footer-modern-title {
+  font-weight: 400;
+  letter-spacing: .025em;
+}
+
+.contacts-creative {
+  letter-spacing: .05em;
+  color: #777;
+}
+.unit-spacing-sm {
+  margin-bottom: -10px;
+  margin-left: -20px;
+}
+.unit {
+  display: flex;
+  flex: 0 1 100%;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.unit-left, .unit-right {
+  flex: 0 0 auto;
+  max-width: 100%;
+
+}
+
+.unit-spacing-sm>* {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-transform: none;
+}
+@media (min-width: 768px) {
+  .unit-left .icon {
+    line-height: 24px;
+}
+}
+.contacts-creative i {
+  color:#3a8d00;
+}
+.footer-modern-2 .footer-modern-panel {
+  border-color: #424242;
+}
+
+.footer-modern-2 .footer-modern-panel {
+  border-color: #444;
+}
+
+footer-copyright a {
+  color: #424242;
+  
+}
+
+
+/* ------------------------------------------------- */
+.btn-go-up {
+  
+    
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#3a8d00;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+.btn-go-up:hover {
+  background-color: #555;
+}
