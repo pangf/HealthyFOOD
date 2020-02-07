@@ -905,3 +905,11 @@ footer-copyright a {
 .btn-go-up:hover {
   background-color: #555;
 }
+
+.active-green {
+  color:#3a8d00 !important;
+}
+.active-class{
+  background-color:rgba(25, 255, 255, 0.3);
+
+}
