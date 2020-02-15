@@ -9,3 +9,6 @@
 #### 1. Detect the user scrolling; If the user do not scroll page navbar will be hide within 3s.
 
 #### 2.Detect live viewpoint, viewpoint high-light(change color) add active to section near top viewpoint
+
+#### screenshots
+![](/screenshot/pic1.png)
